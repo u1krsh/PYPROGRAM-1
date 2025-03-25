@@ -1,0 +1,5 @@
+file = open("test.txt","rb")
+file.seek(-5,2)
+print(file.readline())
+# file.read(5)
+file.close()

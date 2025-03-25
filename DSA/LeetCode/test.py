@@ -1,3 +1,5 @@
+a = [11,12,13,14,15]
 
-x =[2,5,3,5,3]
-print(sorted(x))
+
+print(list( filter( lambda x : x % 2 == 0, a)))
+
