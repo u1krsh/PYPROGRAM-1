@@ -20,6 +20,4 @@ graph = {
     'E': ['B', 'F'],
     'F': ['C', 'E']
 }
-
-# Run BFS starting from node 'A'
 bfs(graph, 'A')
