@@ -13,16 +13,6 @@ def insert(root, val):
         root.right = insert(root.right, val)
     return root
 
-def search(root, val):
-    if not root:
-        return False
-    if root.val == val:
-        return True
-    elif val < root.val:
-        return search(root.left, val)
-    else:
-        return search(root.right, val)
-
 def inorder(root):
     if not root:
         return
@@ -37,6 +27,3 @@ for val in [8, 3, 10, 1, 6, 14, 4, 7]:
 print("Inorder Traversal (Sorted):")
 inorder(root)  # Output: 1 3 4 6 7 8 10 14
 
-
-print("\nSearch for 6:", search(root, 6))  # True
-print("Search for 13:", search(root, 13))  # False

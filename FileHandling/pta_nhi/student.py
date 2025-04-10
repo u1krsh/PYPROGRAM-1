@@ -1,5 +1,5 @@
 def display():
-    with open("student.csv","r") as f:
+    with open("student.csv", "r") as f:
         x = f.readline()
         while x != "":
             print(f"Details: " , x)
@@ -7,7 +7,7 @@ def display():
     f.close()
             
 def add_student(name,section,roll):
-    with open("student.csv","a") as f:
+    with open("student.csv", "a") as f:
         f.write(f"\n{name},{section},{roll}")
     f.close()
 

@@ -1,4 +1,4 @@
-file = open("test.txt","w")
+file = open("test.txt", "w")
 print(file.name)
 print(file.mode)
 print(file.closed)
