@@ -15,7 +15,6 @@ class Iter:
         x = self.start
         self.start += self.gap
         return x
-
 x =Iter(2,10,2)
 for i in x:
 
