@@ -42,10 +42,9 @@ def handle_click(event):
     y = row * 100
 
     if current_player == "X":
-        canvas.create_line(x + 10, y + 10, x + 90, y + 90)
-        canvas.create_line(x + 90, y + 10, x + 10, y + 90)
+        canvas.create_text(x + 50, y + 50, text="X", font=("Arial", 36, "bold"))
     else:
-        canvas.create_oval(x + 10, y + 10, x + 90, y + 90)
+        canvas.create_text(x + 50, y + 50, text="O", font=("Arial", 36, "bold"))
 
     # Check for win
     if check_winner():
