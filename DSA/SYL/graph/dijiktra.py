@@ -1,4 +1,4 @@
-def dijkstra_simple(graph, start):
+def dijkstra(graph, start):
     unvisited = list(graph.keys())  # All nodes are initially unvisited
     distances = {node: float('inf') for node in graph}
     distances[start] = 0  # Distance to start node is 0
