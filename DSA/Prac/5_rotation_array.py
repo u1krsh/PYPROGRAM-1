@@ -1,7 +1,7 @@
 def rot_arr(arr):
     inv_index = len(arr) -1
     fwd_index = 0
-    while fwd_index > inv_index:
+    while fwd_index < inv_index:
         arr[fwd_index] , arr[inv_index] = arr[inv_index] , arr[fwd_index]
         fwd_index += 1
         inv_index -= 1
